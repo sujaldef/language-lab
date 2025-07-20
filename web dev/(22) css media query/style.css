@@ -1,0 +1,28 @@
+ /* @media not|only mediatype and (expressions) {
+            CSS-Code;
+        } */
+body{
+    background-color: red;
+}
+@media only screen and (max-width:444px ){
+    body{
+        background-color: bisque;
+    }
+    /* this meansthat is the width is less than  444px themm the beige color wwill apply if not red will aply we can seee the cahnge in inspect mode in web browser we can also apply min-width */
+    .boxes{
+        flex-direction: column;
+    }
+    /* means ki itni widht se jada mai voh column mai aay jayenge  */
+    
+}   
+.box{
+    width: 344px;
+    height: 344px;
+    background-color: steelblue;
+    padding: 3px;
+    margin: 3px;
+}
+.boxes{
+    display: flex;
+    /* this made the boxes inline fnt  */
+}

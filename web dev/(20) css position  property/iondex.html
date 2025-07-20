@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 10px;
+            padding: 10px;
+
+        }
+
+        .box {
+            height: 70px;
+            width: 110%;
+            ;
+            padding: 3px;
+
+            margin: 3px;
+            border: 2px solid black;
+        }
+
+        .box1 {
+            background-color: blue;
+            /* sticky means u can scrol past this and the block will stickm to ur screen if u scrool pas it  */
+            position: sticky;
+            top: 0px;
+            height: 111px;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .box2 {
+            background-color: rgb(121, 87, 101);
+            /* absolute nearest parent ancesterr ke respect mai set hoga like for ex which is the highest authority here .... that nis html which is positioned and if we set positioned of the parent clas  here then it wil set itself ac c to it */
+            position: absolute;
+            top: 1px;
+            left: 0px;
+        }
+
+        .box3 {
+            background-color: rgb(173, 41, 87);
+            position: relative;
+            top: 23px;
+            left: 62px;
+        }
+
+        .box4 {
+            background-color: rgb(94, 127, 28);
+            position: fixed;
+            /* this menas that the box is fixed on the screen and it will not move if u scrool  */
+            bottom: 0px;
+            left: 8vw;
+            height: 111px;
+        }
+
+        .parent {
+            padding: 113px;
+            margin: 14px;
+            border: 3px solid purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+
+</body>
+
+</html>

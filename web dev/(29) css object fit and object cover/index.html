@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .container{
+        height: 338px;
+        width: 394px;
+        border: 2px solid black;
+        background-image: url(small5.jpg);      
+        background-position: center center ;
+        background-repeat: no-repeat;
+        /* yeh repeat prop use oti hai jaha apni img ka size chota hai container se thenn voh repeate hogi to prevent that we use repeat  prop nand we can also specify ki repeat x mai hogi ya y mai  */
+        /* background-clip: border-box;  */
+        /* yeh prop text ke piche jkese kya img aayrgi batata hai  */
+    }
+
+    img {
+        width: 466px;
+        height: 488px;
+        object-fit: cover;
+        /* object-position: bottom right; */
+        object-position: fill;
+        /*
+        means that the img will cover the img part as its written in img part it will not follow the contaioner part 
+        
+        but ismai img crop ho jayegi
+        */
+        object-position: 10px 20px;
+        /* yeh prop space jityna bataya hai utna chod degio  */
+        /*
+        object-fit: contain;
+         this will not fill the contaioner but will not crop the img also 
+          */
+    }
+   </style>
+</head>
+<body>
+   <div class="container">
+
+   </div>
+</body>
+</html>

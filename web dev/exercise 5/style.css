@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Matemasie", sans-serif;
+  background-color: black;
+  background-color: bisque;
+  position: relative;
+}
+ul li {
+  list-style: none;
+  padding: 12px;
+  background-color: rgb(146, 86, 86);
+}
+ul {
+  display: flex;
+  flex-wrap: wrap;
+
+  background-color: rgb(146, 86, 86);
+  border: 6px solid rgb(164, 106, 106);
+}
+.upper-box li:hover {
+  background-color: rgba(186, 86, 86, 0.585);
+  color: rgb(97, 43, 43);
+  cursor: context-menu;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+}
+
+nav {
+  background-color: rgb(203, 142, 152);
+  height: 83px;
+}
+main {
+  background-color: black;
+  color: rgb(245, 210, 210);
+  padding: 34px;
+}
+footer {
+  background-color: aquamarine;
+  padding: 50px;
+  margin: 0px;
+}
+.container {
+  background-color: green;
+  margin: 12px 34px;
+  padding: 55px 23px;
+  text-align: center;
+}
+
+.box1 {
+  background-color: palevioletred;
+  height: 50vh;
+  width: 45%;
+  display: inline-block;
+  margin: 0 12px;
+}
+
+.box2 {
+  background-color: blue;
+  height: 50vh;
+  width: 45%;
+  display: inline-block;
+  margin: 0 12px;
+}
+
+.textbox {
+  padding: 34px;
+  border: 2px solid rgb(249, 158, 158);
+  margin: 50px 20vw;
+  font-size: 23px;
+  border-radius: 13px;
+  background-color: aquamarine;
+}
+
+.sidebox {
+  height: 32px;
+  width: 32px;
+  background: orange;
+  position: fixed;
+  bottom: 12px;
+  right: 23px;
+  border-radius: 60px;
+}
+
+footer {
+  height: 100px;
+  background-color: bisque;
+}

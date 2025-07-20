@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>csss shadowas and outline</title>
+    <style>
+        /* .box{ 
+            border: 2px solid black;
+            padding:34px;
+            
+        /* } */
+        .box {
+            border: 2px solid black;
+            margin: 10px;
+            padding: 10px;
+            /* 
+            this is the ssyntex of box shadow
+            box-shadow: h offset  v offset  blur spread color inset; */
+            box-shadow: 15px 15px 15px #618033;
+        }
+
+        .shadow {
+            text-shadow: 15px 15px 15px #a92020;
+            outline: 5px solid blue;
+            /* ek or lane ke liya ya outile kee offset ke liye we can do  */
+            outline-offset: 40px;
+            /* and with that we have to border  */
+            border: 5px solid green;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        i am a box
+    </div>
+    <p class="shadow">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi quae possimus, sed earum magni dolore eum
+        quaerat molestiae atque. Fuga excepturi praesentium tenetur?
+    </p>
+</body>
+
+</html>

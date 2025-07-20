@@ -1,0 +1,58 @@
+.container {
+    border: 2px solid black;
+    display: grid;
+    grid-template-areas: "nav nav nav"
+        "side article article"
+        "footer footer footer";
+        /* also there is the property of gap 
+         */
+         row-gap: 12px;
+         column-gap: 23px;
+         /* and this prop justify the items in grid forex  */
+         /* justify-items: center;
+         horizontaly  */
+         /* align-items: center;
+         vertically  */
+         /* these which have trms are for all  */
+         /* but when we want only ne item to alighn 
+         we do align-self: ;
+         and justify-self: ;
+} */
+ 
+.item{
+    border: 2px solid;
+}
+.item-1 {
+    grid-area: nav;
+    background-color: aqua;
+}
+
+.item-2 {
+    grid-area: side;
+    background-color: beige;
+}
+
+.item-3 {
+    grid-area: article;
+    background-color: azure;
+}
+
+.item-4 {
+    grid-area: footer;
+    background-color: rgb(124, 191, 191);
+}
+
+.item-5 {
+    grid-area: nav;
+    /* overlapping with the 1st item  */
+}
+/* also we can use the unit called "fr unit " which means the fraction of alll 
+for example if we says the 
+wdith:80vw means ki total ki 80% hai
+and if we write
+grid-templete-column: 1fr 1fr 1fr;
+ menas ki 80% ka 3 parts honge and voh wdith hogi column ke
+ and we we want to write 10s of fr them we have 
+ repeat(100,1fr)
+ repeat(100,minmax(100px,1fr) means min 100px and max 1fr
+ */

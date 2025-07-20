@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css sizing units</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            /* jo apna web page hai uske acc adjust kar dega like horizontal scrooll bar nai ayega */
+            width: 50vw;
+            background-color: blue;
+            color: beige;
+            /* yeh mid mai hi rahega left and right  mai chod dega */
+            margin: 25px auto;
+            height: 20vh;
+           font-size: 20px;
+            /* when we write the rem it mutiply tha already size with the size we write  
+            em= element*/
+            font-size: 2em;
+            /* means the size right now is 20*2=40 */
+
+            
+        }
+        .here{
+            border: 2px solid black;
+            /* jo apna web page hai uske acc adjust kar dega like horizontal scrooll bar nai ayega */
+            width: 50vw;
+            background-color: blue;
+            color: beige;
+            /* yeh mid mai hi rahega left and right  mai chod dega */
+            margin:auto;
+            height: 15vh;
+           font-size: 20px;
+            /* when we write the rem it mutiply tha the html root element size to that nuimber in this cse its 18px
+            rem=root element  */
+            font-size: 3rem;
+            /* means the size right now is 20*2=40 */
+
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ducimus rem aspernatur.</div>
+    <div class="here">Lorem ipsum dolor sit amet.</div>
+</body>
+</html>

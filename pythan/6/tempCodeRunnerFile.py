@@ -1,0 +1,1 @@
+input(f"the marksd in sub{i+1}:-") for i in range(3)

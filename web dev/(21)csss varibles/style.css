@@ -1,0 +1,28 @@
+*{
+    padding: 0%;
+    margin: 10px
+
+
+}
+:root{
+    /* this is the gloval var type html css mai  ese hi declere karte hai and yeh var hai colorke whereever we will use this we willchange it by cangng the global var root  */
+    --color: rgb(142, 142, 224);
+    --seccolor: rgb(209, 170, 177);
+    --defpad:12px;
+    /* this is the global var for padding  */
+}
+.container{
+    background-color: var(--color,green) ;
+    /* we write the green coz if in case the color var is not found then it will use the green color  */
+}
+ul li{
+    list-style: lower-alpha;
+    background-color: var(--seccolor);
+    padding: 10px;
+    margin: 12px ;
+}
+ul li:first-child{
+    --colorpri: rgb(232, 64, 64);
+    /* this is a local variable and hence it will overwrite the global var  */
+    background-color: var(--colorpri);
+}

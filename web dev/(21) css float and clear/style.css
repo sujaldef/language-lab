@@ -1,0 +1,23 @@
+.cards{
+    border: 2px solid black;
+    /* but the image willl oferflow the border and hence we will use the dislay flowwroot to fix this byy doing this theimg wll wrap or confined around thr border  */
+    display: flow-root;
+}
+
+img{
+    float:left;
+    this will set to left and allow the rest to be displayed on remaing portion 
+}
+
+.card{
+    border: 2px solid red;
+}
+*{
+    margin: 1px;
+    padding: 1px;
+}
+.card:nth-child(4){
+    background-color: aqua;
+    clear:both;
+    /* thiis means that the 4th child of card will not allow anything float in both sides of it  */
+}

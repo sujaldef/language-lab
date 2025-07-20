@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS TRANSFORM</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            background-color: antiquewhite;
+            border: 2px solid;
+            height: 90px;
+            width: 90px;
+            /* transform: rotate(40deg); */
+            /* means this will rotate to 40^degree  */
+            /* or we can use turn instead of deg  */
+            /* transform: rotate(0.5turn); */
+            /* means 180deg as 1 turn is 360 deg  */
+            transform: rotateX(40deg);
+            /* this is rotated around x axis  */
+            transform: scale(1.5);
+            /* this will increace the size we can change the  axis also */
+            transform: skew(12deg);
+            /* means 2 opp agnles se 5 deg strech kar diya ho  */
+            transform: translate(25px);
+            /* and we can do 25%(of box)
+            we can do it on X and Y  */
+
+
+
+            /* we ca als apply multiple prop at once 
+             */
+             transform: scale(1.5) translateY(25%) rotateY(40deg);
+
+
+             transform-origin: 0% 0%;
+             /* means rtation iss point ke along hhoga  */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            margin: 55px;
+            width: 100vw;
+            height: 80vh;
+            border: 2px solid purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            box
+        </div>
+    </div>
+</body>
+
+</html>

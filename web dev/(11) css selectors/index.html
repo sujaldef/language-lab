@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=div, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*element selectors*/
+        div{
+            background-color: rgb(207, 220, 138);
+        }
+        /* class selector */
+        .red{
+            background-color: rgb(195, 52, 52);
+        }
+        /* id selector */
+    #green{
+        background-color: rgb(16, 152, 64);
+    }
+    div > p{
+        background-color: bisque;
+    }
+    /* decending operator */
+    div p{
+        then this will appy will p in div no matter how inside or indreect it is
+    }
+    /* universal selector means applicale to all the body  */
+    * {
+        margin: 10;
+        padding: 0;
+
+    }
+    /* psuedo selectors */
+    a:visited{
+        color: blue;
+    }
+    a:link{
+        color: yellow;
+    }
+    a:hover{
+        background-color: pink;
+    }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        i am div
+        <p>i am the direct child or para of this div and i can be seperately selev=cted using div and  nut if the p is indise anything(for ex article )then tis emthod wll not apply and we have to decendent selector</p>
+    </div>
+    <div>
+        i am div
+    </div>
+    <div class="red">
+        i am div
+    </div>
+    <div id="green">
+        i am div
+    </div>
+    <a href="https://www.google.co.uk/">googlle is here </a>
+    <!-- open in browsser and see that the visitedd site is blue and non visited is yellow as coommned and when hower its pink -->
+    <a href="www.facebookkk.com">facebook is here is here </a>
+</body>
+</html>

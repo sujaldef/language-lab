@@ -1,0 +1,55 @@
+/* .box:first-child{
+            background-color: red;
+        } */
+
+        /* .box::first-line{
+            color: yellow;
+        } */
+
+        /* .boxes *{
+         means har boxes ke andar 
+            color: blue;
+        
+            border: 2px solid black;
+        }
+
+        p, a, .box, [data-color="primary"]{
+            padding-top: 45px;
+            rhis is the grouping of selectors
+        } */
+
+        /* .box:nth-child(odd){
+        odd child ke liye
+            background-color: blue;
+        } */
+
+        /* .box:nth-last-child(2){
+        niche  se last cild ke liye
+            background-color: red;
+        } */
+
+        .boxes::before {
+            content: "Harry is good";
+            color: blue;
+            /* means element is enterred is insertred thru css dynamically  */
+    
+        }
+        .boxes::after {
+            content: "Sigma course is also good";
+            color: red;
+        }
+
+        ::selection {
+            background-color: black;
+            color: rgb(128, 177, 177);
+            /* selected text ka color  */
+        }
+
+        .box::first-letter {
+            color: peru;
+            font-size: 45px;
+        }
+
+        input::placeholder {
+            color: rgb(84, 84, 88);
+        }

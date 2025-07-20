@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .container {
+            background-color: bisque;
+            display: flex;
+            border: 5px solid;
+            height: 90vh;
+            /* this is for the horizontally center  */
+            justify-content: center;
+            /* this is for the main axis  */
+            align-items: center;
+            /* this will change the diection like from column to rows 
+            align-item when you have one line 
+            and if more than one line we use
+            align-content */
+            flex-direction: row;
+            /* in this jis direction mai item lay ho rayy hai voh hai main axis and in which direction the eements are not arranged are caled cross axis 
+            as in this axis the x-axis is the cross axis and y-axis is the main axis */
+
+
+
+            /* there are things like main start and main end  */
+            /* and cross start and cross end  */
+            flex-wrap: wrap;
+            flex-flow: row wrap;
+            /* and if we dont apply the paddings etx we can write  */
+            row-gap: 2px;
+            column-gap: 3px;
+
+
+
+            /* these are all the prop of the container ///// and remember we use container prop under container and items prop under item  */
+
+        }
+
+        .item {
+            background-color: aqua;
+            height: 10vh;
+            width: 10vh;
+            border: 1px solid black;
+            margin: 12px;
+
+            /* 1st prop is the order and we can arrange the order such aas the particullar box becomes mid or kast or start  */
+            flex-grow: 1;
+            /* means that sare item eqal jagah lenge equal width leke or yeh bydeafult 0 hota  */
+
+        }
+        .item1{
+            flex-grow: 222;
+            /* this will do ki the 1st item will be longer than others //
+            and 
+            flex-shrink:2;
+             means ki jab jaruart hogi tab yeh apne initail size se half ho sakta hai */
+             align-self: flex-start;
+             /* kisi particular item keliye  */
+        }
+
+        .order-1 {
+            order: 1;
+        }
+
+        .order-2 {
+            order: 2;
+        }
+
+        .order-3 {
+            order: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+
+            <div class="item item1">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item order-1">4</div>
+            <div class="item"></div>
+            <div class="item"></div>
+           
+
+        </div>
+    </main>
+</body>
+
+</html>
